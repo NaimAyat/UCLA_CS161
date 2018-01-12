@@ -39,3 +39,14 @@ Constructs the list `(1 2 3 4)`.
 )
 ```
 Defines a function that returns `5`; the last line of the function is always the return value.
+```
+(defun fact(x)
+  (if (> x 0) 
+    fact(* x (fact(- x 1)))
+  1
+  )
+)
+(print (fact 5))
+```
+Defines the function `fact` to recursively calculate the factorial of a positive integer `x`.
+  
