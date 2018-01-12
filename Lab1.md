@@ -1,6 +1,6 @@
 # Lab 1 (Jan 12, 2018)
 ## Lisp Syntax
-###  `car` & `cdr`
+###  `car` and `cdr`
 ```
 (car '(1 2 3))
 ```
@@ -49,7 +49,7 @@ Defines a function `test` that returns `5`; the last line of the function is alw
 ```
 Defines a function `fact` to recursively calculate the factorial of a positive integer `x`.
 
-### `set` & `setq`
+### `set` and `setq`
 ```
 (set 'a '(1 2 3))
 ```
@@ -64,3 +64,9 @@ Sets the value of the variable `b` to the list `'(4 5 6)`. The difference is tha
 (append '(1 2 3) '(4 5 6))
 ```
 Combines each argument and return the list `(1 2 3 4 5 6)`.
+### `list` and `atom`
+`list` returns `T` if the argument is a list and `NIL` if it is not.
+`atom` returns `T` if the argument is an atom and `NIL` if it is not. Note: every single character is an atom.
+`symbolp` returns `T` if the argument is a symbol and `NIL` if it is not. Note: every non-numeric carachter is a symbol.
+`oddp` returns `T` if the argument is an odd value and `NIL` if it is not.
+`evenp` returns `T` if the argument is an even value and `NIL` if it is not.
