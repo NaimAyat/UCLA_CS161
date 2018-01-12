@@ -74,8 +74,9 @@ Combines each argument and return the list `(1 2 3 4 5 6)`.
 (defun mylen(x)
   (if (null x)
     0
-    (+ 2 (mylen (cdr x)))
+    (+ 1 (mylen (cdr x)))
   )
 )
 ```
 Defines a recursive function `mylen` to determine the length of a list without `setq`.
+
