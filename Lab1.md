@@ -30,3 +30,12 @@ Note that any combination of `car`/`cdr` can be written as a single word with al
 (cons '1 '(2 3 4))
 ```
 Constructs the list `(1 2 3 4)`.
+
+### `defun`
+```
+(defun test()
+  (+ 1 2)
+  (+ 2 3)
+)
+```
+Defines a function that returns `5`; the last line of the function is always the return value.
