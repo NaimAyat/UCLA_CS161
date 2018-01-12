@@ -48,4 +48,13 @@ Defines a function `test` that returns `5`; the last line of the function is alw
 )
 ```
 Defines a function `fact` to recursively calculate the factorial of a positive integer `x`.
-  
+
+### `set` & `setq`
+```
+(set 'a '(1 2 3))
+```
+Sets the value of variable `a` to the list `'(1 2 3)`.
+```
+(setq b '(4 5 6))
+```
+Sets the value of the variable `b` to the list `'(4 5 6)`. The difference is that the first argument is automatically quoted by `setq`.
