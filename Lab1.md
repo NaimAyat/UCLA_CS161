@@ -78,4 +78,4 @@ Combines each argument and return the list `(1 2 3 4 5 6)`.
   )
 )
 ```
-Defines a recursive function `defun` to determine the length of a list without `setq`.
+Defines a recursive function `mylen` to determine the length of a list without `setq`.
