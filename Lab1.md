@@ -5,17 +5,14 @@
 (car '(1 2 3))
 ```
 Returns the first element of the list, `1`.
-
 ```
 (cdr '(1 2 3))
 ```
 Returns the elements of the list excluding the first, `2 3`.
-
 ```
 (setq a '((1 2) 3))
 ```
 Assigns `a` the value `'((1 2) 3)`.
-
 ```
 (car (cdr (car a)))
 ```
@@ -64,9 +61,21 @@ Sets the value of the variable `b` to the list `'(4 5 6)`. The difference is tha
 (append '(1 2 3) '(4 5 6))
 ```
 Combines each argument and return the list `(1 2 3 4 5 6)`.
+
 ### Boolean Functions
 * `list` returns `T` if the argument is a list and `NIL` if it is not.
 * `atom` returns `T` if the argument is an atom and `NIL` if it is not. Note: every single element is an atom.
 * `symbolp` returns `T` if the argument is a symbol and `NIL` if it is not. Note: every non-numeric element is a symbol.
 * `oddp` returns `T` if the argument is an odd integer and `NIL` if it is not.
 * `evenp` returns `T` if the argument is an even integer and `NIL` if it is not.
+
+### Examples
+```
+(defun mylen(x)
+  (if (null x)
+    0
+    (+ 2 (mylen (cdr x)))
+  )
+)
+```
+Finds the length of a list without `setq`.
