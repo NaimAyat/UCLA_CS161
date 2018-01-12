@@ -64,9 +64,9 @@ Sets the value of the variable `b` to the list `'(4 5 6)`. The difference is tha
 (append '(1 2 3) '(4 5 6))
 ```
 Combines each argument and return the list `(1 2 3 4 5 6)`.
-### `list` and `atom`
+### Boolean Functions
 * `list` returns `T` if the argument is a list and `NIL` if it is not.
 * `atom` returns `T` if the argument is an atom and `NIL` if it is not. Note: every single element is an atom.
 * `symbolp` returns `T` if the argument is a symbol and `NIL` if it is not. Note: every non-numeric element is a symbol.
-* `oddp` returns `T` if the argument is an odd value and `NIL` if it is not.
-* `evenp` returns `T` if the argument is an even value and `NIL` if it is not.
+* `oddp` returns `T` if the argument is an odd integer and `NIL` if it is not.
+* `evenp` returns `T` if the argument is an even integer and `NIL` if it is not.
