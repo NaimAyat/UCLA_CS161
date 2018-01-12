@@ -38,7 +38,7 @@ Constructs the list `(1 2 3 4)`.
   (+ 2 3)
 )
 ```
-Defines a function that returns `5`; the last line of the function is always the return value.
+Defines a function `test` that returns `5`; the last line of the function is always the return value.
 ```
 (defun fact(x)
   (if (> x 0) 
@@ -46,7 +46,6 @@ Defines a function that returns `5`; the last line of the function is always the
   1
   )
 )
-(print (fact 5))
 ```
-Defines the function `fact` to recursively calculate the factorial of a positive integer `x`.
+Defines a function `fact` to recursively calculate the factorial of a positive integer `x`.
   
