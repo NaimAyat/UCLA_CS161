@@ -80,3 +80,12 @@ Combines each argument and return the list `(1 2 3 4 5 6)`.
 ```
 Defines a recursive function `mylen` to determine the length of a list without `setq`.
 
+```
+(defun contains-number(x)
+  (if (atom x)
+    (numberp x)
+    (or (contains-number (car x)) (contains-number (cdr x)))
+  )
+)
+```
+Defines a recursive function `contains-number` to determine whether a list contains a number.
