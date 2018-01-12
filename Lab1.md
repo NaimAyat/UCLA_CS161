@@ -58,3 +58,9 @@ Sets the value of variable `a` to the list `'(1 2 3)`.
 (setq b '(4 5 6))
 ```
 Sets the value of the variable `b` to the list `'(4 5 6)`. The difference is that the first argument is automatically quoted by `setq`.
+
+### `append`
+```
+(append '(1 2 3) '(4 5 6))
+```
+Combines each argument and return the list `(1 2 3 4 5 6)`.
