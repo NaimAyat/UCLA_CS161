@@ -1,6 +1,6 @@
 # Lab 1 (Jan 12, 2018)
 ## Lisp Syntax
-
+###  `car` & `cdr`
 ```
 (car '(1 2 3))
 ```
@@ -19,7 +19,7 @@ Assigns `a` the value `'((1 2) 3)`
 ```
 (car (cdr (car a)))
 ```
-Now returns `2`. This can be shortened to:
+This statement now returns `2`. It can be shortened to:
 ```
 (cadar a)
 ```
