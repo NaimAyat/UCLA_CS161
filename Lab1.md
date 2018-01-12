@@ -94,8 +94,8 @@ Defines a recursive function `contains-number` to determine whether a list conta
 (defun delete-n(x y)
   (if (= x 1)
     (cdr y)
-    (append (car y) (delete-n(- x 1) (cdr y)))
+    (append (list (car y)) (delete-n(- x 1) (cdr y)))
   )
 )
 ```
-Defines a recursive function `delete-n` that removes the n<sup>th</sup> element of a list.
+Defines a recursive function `delete-n` that deletes the n<sup>th</sup> element of a list.
