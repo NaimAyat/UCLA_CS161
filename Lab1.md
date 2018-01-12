@@ -89,3 +89,13 @@ Defines a recursive function `mylen` to determine the length of a list without `
 )
 ```
 Defines a recursive function `contains-number` to determine whether a list contains a number.
+
+```
+(defun delete-n(x y)
+  (if (= x 1)
+    (cdr y)
+    (append (car y) (delete-n(- x 1) (cdr y)))
+  )
+)
+```
+Defines a recursive function `delete-n` that removes the n<sup>th</sup> element of a list.
