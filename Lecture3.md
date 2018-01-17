@@ -27,3 +27,10 @@
   * Transition model/successors
   * Costs
 * Task: Find sequence of actions to move from initial to goal state
+#### 8-Puzzle Example
+```
+1 2 3
+6 5 7
+9 8
+```
+* Actions: We can move the blank tile up, down, left, or right. In the current state, down and left are not permissible. 
