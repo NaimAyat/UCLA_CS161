@@ -26,3 +26,4 @@
   * Actions
   * Transition model/successors
   * Costs
+* Task: Find sequence of actions to move from initial to goal state
