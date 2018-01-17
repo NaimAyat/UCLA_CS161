@@ -54,7 +54,7 @@
   1 2
   3
   ```
-* [The resulting search tree (partial)](Images/searchTree.jpg)
+  [The resulting search tree (partial)](Images/searchTree.jpg)
 * Before approaching a problem, you need to know:
   * Number of states
   * Solution depth
