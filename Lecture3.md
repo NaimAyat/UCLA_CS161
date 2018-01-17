@@ -21,3 +21,8 @@
       1. Solution
 ### Search Problem Formulation
 * Common elements
+  * Initial state
+  * Final/goal state or goal test/predicate
+  * Actions
+  * Transition model/successors
+  * Costs
