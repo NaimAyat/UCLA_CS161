@@ -34,3 +34,12 @@
 9 8
 ```
 * Actions: We can move the blank tile up, down, left, or right. In the current state, down and left are not permissible. 
+### Observations
+* States are atomic (no internal structure)
+* States are discrete
+* No percepts
+* Deterministic transitions
+* How man unique states? Typically factorial
+* Choice of action space is important
+  * 8-Puzzle example: Move tile `x` up/down/left/right is less efficient than move tile `blank` up/down/left/right
+* Actions may not be applicable to all states
