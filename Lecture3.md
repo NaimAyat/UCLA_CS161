@@ -19,5 +19,5 @@
       2. Strategy
     * Outputs:
       1. Solution
-* Search Problem Formulation
-  * Common elements
+### Search Problem Formulation
+* Common elements
