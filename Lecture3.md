@@ -54,4 +54,4 @@
   1 2
   3
   ```
-* [The resulting search tree (partial)](Images/searchTree.png)
+* [The resulting search tree (partial)](Images/searchTree.jpg)
