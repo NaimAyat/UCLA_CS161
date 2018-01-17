@@ -68,4 +68,5 @@
   * Search space vs. search tree
     * Search space: draw an arrow back to repeated state in tree to create a graph
   * 15-puzzle has 1.3 trillion states: few ms to solve
-  * 24-puzzle has 10^25 states: one day to solve
+  * 24-puzzle has 10<sub>25</sub> states: one day to solve
+  * Solving sliding block puzzles is NP-complete
