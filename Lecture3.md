@@ -59,4 +59,11 @@
   * Number of states
   * Solution depth
   * Branching factor 
- 
+* Observations
+  * Some paths include the goal state
+  * Solving the search problem is finding such path
+  * Some paths are infinite (tree infinite)
+  * Beware of repeated states
+  * Different solutions vs. different qualitites
+  * Search space vs. search tree
+    * Search space: draw an arrow back to repeated state in tree to create a graph
