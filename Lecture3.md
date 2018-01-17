@@ -12,7 +12,6 @@
     * Rubik's cube
   * Planning
     * Practical industry applications (ex. Amazon delivery)
-
 * Structure
   * *Search engine*: any search algorithim
     * Inputs:
@@ -20,4 +19,5 @@
       2. Strategy
     * Outputs:
       1. Solution
-      
+* Search Problem Formulation
+  * Common elements
