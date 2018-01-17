@@ -43,3 +43,15 @@
 * Choice of action space is important
   * 8-Puzzle example: Move tile `x` up/down/left/right is less efficient than move tile `blank` up/down/left/right
 * Actions may not be applicable to all states
+### Search Trees
+* Ex. We have the initial state
+  ```
+    1
+  3 2
+  ```
+  and the goal state
+  ```
+  1 2
+  3
+  ```
+  
