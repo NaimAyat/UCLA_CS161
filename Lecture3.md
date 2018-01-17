@@ -70,3 +70,8 @@
   * 15-puzzle has 1.3 trillion states: few ms to solve
   * 24-puzzle has 10<sup>25</sup> states: one day to solve
   * Solving sliding block puzzles is NP-complete
+#### Extensions
+* Minimizing solution cost ("optimal solution")
+*  Initial state unknown
+  * Start with "belief state" (the state in which any scenario is possible)
+    * Thus, assume every action is possible in the current state
