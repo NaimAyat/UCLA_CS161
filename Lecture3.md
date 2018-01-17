@@ -58,4 +58,5 @@
 * Before approaching a problem, you need to know:
   * Number of states
   * Solution depth
-  * Branching factor
+  * Branching factor 
+ 
