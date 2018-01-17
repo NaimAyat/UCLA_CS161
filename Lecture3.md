@@ -13,7 +13,7 @@
   * Planning
     * Practical industry applications (ex. Amazon delivery)
 * Structure
-  * *Search engine*: any search algorithim
+  * A *search engine* simply refers to a search algorithim
     * Inputs:
       1. Problem formulation
       2. Strategy
