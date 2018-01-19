@@ -7,3 +7,8 @@
 * Depth-limited search
 * Iterative deepening DFS
 * Informed search
+## DFS Lisp Implementation
+* Example input: `(a ((b (d (e (h)))) (c (f g))))`
+* Example output: `(a b d e h c f g)`
+```
+(defun dfs (tree)
