@@ -3,7 +3,7 @@
 * Uninformed search
 * [BFS](https://upload.wikimedia.org/wikipedia/commons/5/5d/Breadth-First-Search-Algorithm.gif)
 * Uniform-cost search
-* DFS
+* [DFS](https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif)
 * Depth-limited search
 * Iterative deepening DFS
 * Informed search
