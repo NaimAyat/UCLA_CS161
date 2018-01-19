@@ -12,3 +12,12 @@
 * Example output: `(a b d e h c f g)`
 ```
 (defun dfs (tree)
+  (if (atom tree)
+    (if tree
+      (list tree)
+      '()
+    )
+    (append (dfs (first tree)) (dfs (first (second tree))) (dfs (second (second tree))))
+  )
+)
+```
