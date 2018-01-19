@@ -21,3 +21,20 @@
   )
 )
 ```
+## BFS Lisp Implementation
+* Example input: `(a ((b (d (e (h)))) (c (f g))))`
+* Example output: `(a b d e h c f g)`
+```
+(defun bfs (tree)
+  (cond
+    ((listp tree)
+      (cond
+        ((null tree) '())
+        ((listp (first tree)) (bfs (append (cdr tree) (car tree))))
+        (t (append (list (car tree)) (bfs (cdr tree))))
+      )
+    )
+    ( t tree)
+  )
+)
+```
