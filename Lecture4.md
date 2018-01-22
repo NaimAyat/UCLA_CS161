@@ -18,9 +18,9 @@ loop do
 ## Search Algorithms
 **This table will appear on midterm.**
 
-|  Algorithm | Complete? |    Time    | Space | Optimal? |
-|:----------:|:---------:|:----------:|:-----:|:--------:|
-| BFS        |           | O(b^d)     |       |          |
-| "Dumb" BFS |           | O(b^(d+1)) |       |          |
-|            |           |            |       |          |
-|            |           |            |       |          |
+|  Algorithm | Complete? |         Time        |       Space      | Optimal? |
+|:----------:|:---------:|:-------------------:|:----------------:|:--------:|
+| BFS        | Yes       | O<sup>b^d</sup>     | b<sup>d</sup>    |          |
+| "Dumb" BFS | Yes       | O(b^<sup>d+1</sup>) | b^<sup>d+1</sup> |          |
+|            |           |                     |                  |          |
+|            |           |                     |                  |          |
