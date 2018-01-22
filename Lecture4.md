@@ -24,3 +24,4 @@ loop do
 | "Dumb" BFS | Yes                   | O(b<sup>d+1</sup>)  | b<sup>d+1</sup>  | Yes      |
 | DFS        | No                    | O(b<sup>m</sup>)    | bm               | No       |
 | DLS        | Yes (if d < l)        | O(b<sup>l</sup>)    | bl               | No       |
+| IDS        | Yes                   | O(b<sup>d</sup>)    | bd               | Yes      |
