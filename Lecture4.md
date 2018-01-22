@@ -16,4 +16,4 @@ loop do
   frontier += node.expand()
 ```
 ## Search Algorithms
-*This table will appear on midterm*
+**This table will appear on midterm.**
