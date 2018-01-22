@@ -19,7 +19,7 @@ loop do
 **This table will appear on midterm.**
 
 |  Algorithm | Complete? |         Time        |       Space      | Optimal? |
-|:-----------|:----------|:-------------------:|:----------------:|:---------|
+|:-----------|:----------|:--------------------|:-----------------|:---------|
 | BFS        | Yes       | O(b<sup>d</sup>)    | b<sup>d</sup>    | Yes      |
 | "Dumb" BFS | Yes       | O(b<sup>d+1</sup>)  | b<sup>d+1</sup>  | Yes      |
 | DFS        | No        | O(b<sup>m</sup>)    | b<sup>m</sup>    |          |
