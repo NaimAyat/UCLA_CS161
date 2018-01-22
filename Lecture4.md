@@ -6,4 +6,8 @@
 ```
 frontier = { initial state }
 loop do
+  if frontier is empty, return Fail
+  node = choose to remove from frontier
+  if node is goal state, return node's state
+  frontier += node.expand()
 ```
