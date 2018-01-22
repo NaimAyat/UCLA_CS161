@@ -21,6 +21,6 @@ loop do
 |  Algorithm | Complete? |         Time        |       Space      | Optimal? |
 |:----------:|:---------:|:-------------------:|:----------------:|:--------:|
 | BFS        | Yes       | O<sup>b^d</sup>     | b<sup>d</sup>    |          |
-| "Dumb" BFS | Yes       | O(b^<sup>d+1</sup>) | b^<sup>d+1</sup> |          |
+| "Dumb" BFS | Yes       | O(b<sup>d+1</sup>) | b^<sup>d+1</sup> |          |
 |            |           |                     |                  |          |
 |            |           |                     |                  |          |
