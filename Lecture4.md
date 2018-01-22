@@ -17,4 +17,3 @@ loop do
 ```
 ## Search Algorithms
 **This table will appear on midterm.**
-∑i=110ti	\sum_{i=1}^{10} t_i
