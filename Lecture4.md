@@ -15,3 +15,8 @@ loop do
   if node is goal state, return node's state
   frontier += node.expand()
 ```
+| Algorithm | Complete? | Time | Space | Optimal? |
+|-----------|-----------|------|-------|----------|
+|           |           |      |       |          |
+|           |           |      |       |          |
+|           |           |      |       |          |
