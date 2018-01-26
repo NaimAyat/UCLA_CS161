@@ -16,11 +16,15 @@
   * `h(v) = 0`
   * Note: if a heurisitic is consistent, it is admissible. However, the inverse it not necessarily true.
 ## 8-Puzzle Problem
-* `h(n) = number of tiles in the wrong position at state n`
+* h<sub>1</sub>(n) = number of tiles in the wrong position at state n
+* h<sub>2</sub>(n) = sum of the Manhattan distane of each tile from its goal position
+  * In other words: the sum of the minimum number of moves for each tile to get to its goal position
 ```
 7 2 4
 5   6
 8 3 1
-
-h(n) = 6 (7, 4, 5, 8, 3, and 1 are in the wrong positions)
 ```
+h<sub>1</sub>(n) = 6 (7, 4, 5, 8, 3, and 1 are in the wrong positions)
+h<sub>2</sub>(n) = 2 + 0 + 3 + 1 + 1 + 3 + 4 = 14
+
+
