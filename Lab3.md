@@ -19,7 +19,9 @@
 * h<sub>1</sub>(n) = number of tiles in the wrong position at state n
 * h<sub>2</sub>(n) = sum of the Manhattan distance of each tile from its goal position
   * In other words: the sum of the minimum number of moves for each tile to get to its goal position
-* h<sub>3</sub>(n) = sum of the straight-line distance of each tile from its goal position
+* h<sub>3</sub>(n) = sum of straight-line distance of each tile from its goal position
+* h<sub>4</sub>(n) = sum of permutation inversions
+
 
 #### Example
 ```
