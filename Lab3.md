@@ -25,6 +25,7 @@
 8 3 1
 ```
 h<sub>1</sub>(n) = 6 (7, 4, 5, 8, 3, and 1 are in the wrong positions)
+
 h<sub>2</sub>(n) = 2 + 0 + 3 + 1 + 1 + 3 + 4 = 14
 
 
