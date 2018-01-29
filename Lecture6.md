@@ -4,4 +4,4 @@
 * *Target pattern*: a partial specification of the goal state.
 * *Pattern database*: a collection of solutions to sub-problems that must be achieved to solve the problem.
 * *Unary constraint*: a constraint on a single variable (ex. `x ≠ 4`). 
-* *Binary constraint*: a constraint over a pair of variables (ex. `x ≠ y`)
+* *Binary constraint*: a constraint over a pair of variables (ex. `x ≠ y`).
