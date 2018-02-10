@@ -11,3 +11,4 @@
     * Automated reasoning
     * Machine learning
 * The "total" Turing Test includes a video signal so that the interrogator can test the subject's perceptual abilities, as well as the opportunity for the interrogator to pass physical objects "through the hatch". To pass this, the computer needs computer vision to perceive objects and robotics to manipulate objects and move.
+## Chapter 2: Intelligent Agents
