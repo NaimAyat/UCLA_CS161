@@ -21,3 +21,14 @@
   3. The actions that the agent can perform.
   4. The agent’s percept sequence to date.
 * A **rational agent**: selects an action that is expected to maximize its performance measure for each possible percept sequence, given the evidence provided by the percept sequence and whatever built-in knowledge the agent has.
+#### 2.3.1 Specifying the Task Environment
+* PEAS: Performance, Environment, Actuators, Sensors
+* For example, the PEAS desctiption for an automated taxi's task environment:
+  * Performance measure: safe, fast, legal, comfortable trip, maximize profits
+  * Environment: roads, traffic, pedestrians, customers
+  * Actuators: steering, accelerator, brake, signal, horn, display
+  * Sensors: cameras, sonar, speedometer, GPS, odometer, accelerometer, engine sensors, keyboard
+#### 2.3.2 Properties of Task Environments
+* If an agent's sensors give it acces to the complete state of the environment at each point in time, then the task environment is *fully observable*. Otherwise, it is *partially observable*. For example, an automated taxi cannot observe what other drivers are thinking.
+* If the next state of the environment is completely determined by the current state and the action executed by the environment, then the environment is *deterministic*. Otherwise, it is *stochastic*.
+## Chapter 3: Solving Problems by Searching
