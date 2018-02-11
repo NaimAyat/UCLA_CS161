@@ -263,3 +263,10 @@
   * C is a set of constraints that specify allowable combinations of values
   * Each domain D<sub>i</sub> consists of a set of allowable values {v<sub>1</sub>, ..., v<sub>2</sub>} for variable X<sub>i</sub>
   * Each constraint C<sub>i</sub> consists of a pair <scope, rel> where scope is a tuple of variables that participate in the constraint and rel is a relation that defines the values that those variables can take on
+### 6.1.1 Example Problem: Map Coloring
+* Suppose we want to color the map of Australia using red, green, and blue such that no neigboring regions have the same color
+* To formulate a constraint satisfaction problem, we define:
+  * The variables: X = set of regions = {WA, NT, Q, NSW, V, SA, T}
+  * The domain of each variable: D<sub>i</sub> = {red, green, blue}
+  * The constraints: C = {SA ≠ WA, SA ≠ NT, SA ≠ Q, SA ≠ NSW, SA ≠ V, WA ≠ NT, NT ≠ Q, Q ≠ NSW, NSW ≠ V}
+  * [Create a constraint graph](Images/constraint.PNG)
