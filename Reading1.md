@@ -42,9 +42,9 @@
 * Detministic: each action has exactly one outcome
 #### 3.1.1 Well-Defined Problems and Solutions
 * A **problem** is defined formally by five components:
-  1. The **initial state** that the agent starts in.
-  2. A description of possible **actions** available to the agent.
-  3. A description of what each action does (the **transition model**), specified by a function `result(s,a)` that returns the state that results from doing action `a` in state `s`. 
+  1. The **initial state** that the agent starts in. Ex. `In(LosAngeles)`.
+  2. The set of possible **actions** available to the agent. Ex. `{Go(SanFrancisco), Go(Vegas), Go(SanDiego)}`
+  3. A description of what each action does (the **transition model**), specified by a function `result(s,a)` that returns the state that results from doing action `a` in state `s`.  Ex. `Result(In(LosAngeles), Go(Vegas)) = In(Vegas)`
      * We also use the term *successor* to refer to any state reachable from a given state by a single action. 
      * Together, the inital state, actions, and transition model define the *state space* of the problem - the set of all states reachable from the initial state by any sequence of actions. 
      * The state space forms a directed *graph* in which the nodes are states and the links are actions.
@@ -55,3 +55,4 @@
 * The preceding elements define a problem and can be gathered into a single data structute that is given as input to a problem-solving algorithm
 * A *solution* to a problem is an action sequence that leads from the initial state to a goal state
 * The *optimal solution* has the lowest path cost among all solutions
+#### 3.1.2 Formulating Problems
