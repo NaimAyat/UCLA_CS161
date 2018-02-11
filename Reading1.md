@@ -263,29 +263,33 @@
   * C is a set of constraints that specify allowable combinations of values
   * Each domain D<sub>i</sub> consists of a set of allowable values {v<sub>1</sub>, ..., v<sub>2</sub>} for variable X<sub>i</sub>
   * Each constraint C<sub>i</sub> consists of a pair <scope, rel> where scope is a tuple of variables that participate in the constraint and rel is a relation that defines the values that those variables can take on
-### 6.1.1 Example Problem: Map Coloring
+#### 6.1.1 Example Problem: Map Coloring
 * Suppose we want to color the map of Australia using red, green, and blue such that no neigboring regions have the same color
 * To formulate a constraint satisfaction problem, we define:
   * The variables: X = set of regions = {WA, NT, Q, NSW, V, SA, T}
   * The domain of each variable: D<sub>i</sub> = {red, green, blue}
   * The constraints: C = {SA ≠ WA, SA ≠ NT, SA ≠ Q, SA ≠ NSW, SA ≠ V, WA ≠ NT, NT ≠ Q, Q ≠ NSW, NSW ≠ V}
   * [Create a constraint graph](Images/constraint.PNG)
-### 6.1.2 Example Problem: Job-Shop Scheduling
+#### 6.1.2 Example Problem: Job-Shop Scheduling
 * Variables: X = {Axle<sub>F</sub>, Axle<sub>B</sub>, Wheel<sub>RF</sub>, Wheel<sub>LF</sub>, Wheel<sub>RB</sub>, Wheel<sub>LB</sub>, Nuts<sub>RF</sub>, Nuts<sub>LF</sub>, Nuts<sub>RB</sub>, Nuts<sub>LB</sub>, Cap<sub>RF</sub>, Cap<sub>LF</sub>, Cap<sub>RB</sub>, Cap<sub>LB</sub>, Inspect}
 * Precedence constraints: For example, Axle<sub>F</sub> must be put on before Wheel<sub>RF</sub>
 * Assume the assembly must be done in 30 minutes: D<sub>i</sub> = {1, 2, 3, ..., 27}
-### 6.1.3 Variations on the CSP formalism
+#### 6.1.3 Variations on the CSP formalism
 * A constraint involving an arbitrary number of variables is a **global constraint**
   * Example: cryptarithmetic
-## 6.2 Constraint Propagation: Inference in CSPs
+### 6.2 Constraint Propagation: Inference in CSPs
 * Using the constraints to reduce the number of legal values of a variable is constraint propagation. In turn, this can reduce the legal values for another variable, and so on
-### 6.2.1 Node Consistency
+#### 6.2.1 Node Consistency
 * A single variable (corresponding to a node in the CSP network) is node-consistent if all the values in the variable's domain satisfy the variable's unary constraints
-### 6.2.2 Arc Consistency
+#### 6.2.2 Arc Consistency
 * A  variable (corresponding to a node in the CSP network) is arc-consistent if all the values in the variable's domain satisfy the variable's binary constraints
-### 6.2.3 Path Consistency
+#### 6.2.3 Path Consistency
 * Path consistency tightens the binary constraints by using implicid constraints that are infirred by looking at triples of variables
-### 6.2.4 K-Consistency
+#### 6.2.4 K-Consistency
 * A CSP is k-consistent if, for any set of `k - 1` variables and for any consistent assignment to those variables, a consistent value can always be assigned to any k<sup>th</sup> variable
   * 1-consistency says that, given the empty set, we can make any set of one variable consistent (ie. node consistent)
 * A CSP is strongly k-consistent if it is k-consistent and also (k-1)-consistent, (k-2)-consistent... all the way down to 1-consistent
+#### 6.2.5 Global Constraints
+* Involve an arbitrary number of variables
+### 6.3
+* 
