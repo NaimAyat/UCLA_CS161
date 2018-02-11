@@ -274,3 +274,18 @@
 * Variables: X = {Axle<sub>F</sub>, Axle<sub>B</sub>, Wheel<sub>RF</sub>, Wheel<sub>LF</sub>, Wheel<sub>RB</sub>, Wheel<sub>LB</sub>, Nuts<sub>RF</sub>, Nuts<sub>LF</sub>, Nuts<sub>RB</sub>, Nuts<sub>LB</sub>, Cap<sub>RF</sub>, Cap<sub>LF</sub>, Cap<sub>RB</sub>, Cap<sub>LB</sub>, Inspect}
 * Precedence constraints: For example, Axle<sub>F</sub> must be put on before Wheel<sub>RF</sub>
 * Assume the assembly must be done in 30 minutes: D<sub>i</sub> = {1, 2, 3, ..., 27}
+### 6.1.3 Variations on the CSP formalism
+* A constraint involving an arbitrary number of variables is a **global constraint**
+  * Example: cryptarithmetic
+## 6.2 Constraint Propagation: Inference in CSPs
+* Using the constraints to reduce the number of legal values of a variable is constraint propagation. In turn, this can reduce the legal values for another variable, and so on
+### 6.2.1 Node Consistency
+* A single variable (corresponding to a node in the CSP network) is node-consistent if all the values in the variable's domain satisfy the variable's unary constraints
+### 6.2.2 Arc Consistency
+* A  variable (corresponding to a node in the CSP network) is arc-consistent if all the values in the variable's domain satisfy the variable's binary constraints
+### 6.2.3 Path Consistency
+* Path consistency tightens the binary constraints by using implicid constraints that are infirred by looking at triples of variables
+### 6.2.4 K-Consistency
+* A CSP is k-consistent if, for any set of `k - 1` variables and for any consistent assignment to those variables, a consistent value can always be assigned to any k<sup>th</sup> variable
+  * 1-consistency says that, given the empty set, we can make any set of one variable consistent (ie. node consistent)
+* A CSP is strongly k-consistent if it is k-consistent and also (k-1)-consistent, (k-2)-consistent... all the way down to 1-consistent
