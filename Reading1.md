@@ -226,3 +226,11 @@
 * Time complexity of minimax: O(b<sup>m</sup>)
 * Space complexity of minimax: bm if all actions generated at once; m if actions generated one at a time
 #### 5.2.2 Optimal Decisions in Multiplayer Games
+* Need to represent each node as a vector <A, B, C, ...>. A represents player A's utility from a node, B represents plaer B's utility from a node, etc.
+### 5.3 Alpha-Beta Pruning
+* The problem with minimax search is that the number of game states it has to examine is exponential in the depth of the tree
+* We can't eliminate the exponent, but we can cut it in half with pruning
+* **Alpha-Beta** pruning: ignore (don't expand) nodes that have no chance of occuring in a true minimax scenario wherein each player plays optimally
+  * α: value of the best (highest-value) choice we have found at any choice point along the path for `max`
+  * β: value of the best (lowest-value) choice we have found at any choice point along the path for `min`
+  * Alpha-Beta seach updates the values for alpha and beta as it goes along and prunes the remaining branches at a node (ie. terminates the recursive call) as soon as the node is known to be worse than the current alpha or beta value.
