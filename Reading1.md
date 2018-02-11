@@ -164,3 +164,9 @@
   * However, for problems with constant step costs, the growth of run time as a function of the optimal solution depth `d` is analyzed in terms of the *absolute error* or *relative error* of the heuristic. 
     * Absolute error: Δ ≡ h* - h, where h* is the actual cost of getting from the root to the goal
     * Relative error: ε ≡ (h* - h) / h*
+* For a state space with a single goal, time complexity of A* is exponential in terms of the absolute error:
+  * O(b<sup>Δ</sup>)
+* For constant step costs, time complexity of A* is:
+  * O(b<sup>εd</sup>)
+* Branching factor: b<sup>ε</sup>
+#### 3.5.3 Memory-Bounded Heuristic Search
