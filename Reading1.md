@@ -67,3 +67,15 @@
   * Actions: Add a queen to any empty square (more intelligent action: add a queen to any square in the leftmost empty column such that it is not attacked by any other queen.
   * Transition model: Returns the board with a queen added to the specified square
   * Goal test: 8 queens are on the board, none are in the same row, column, or diagonal
+### 3.3 Searching for Solutions
+* Search tree: initial state is root; branches are actions; nodes are states in the state space of the problem
+* To expand the current state, we apply each legal action to the current state, thereby generating a new set of states
+* Leaf node: a node with no children in the tree
+* The set of all leaf nodes available for expansion at any given time is called the **frontier**
+* Need to keep track of each expanded node in the **explored set**
+#### 3.3.1 Infrastructure for Search Algorithms
+* For each node `n` of the tree, we have a structure that contains four components:
+  1. State: the state in the state space to which the node corresponds
+  2. Parent: the node in the search tree that generated this node
+  3. Action: the action that was applied to the parent to generate this node
+  4. Path-cost: the cost, denoted by `g(n)`, of the path from the initial state to this node, as indicated by the parent pointers
