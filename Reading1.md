@@ -126,5 +126,13 @@
 * Optimal? Yes, when the path cost is a nondecreasing function of the depth of the node (like BFS)
 * Time complexity? O(b<sup>d</sup>) (like BFS)
 * Space complexity? bd (better than BFS)
+#### 3.4.6 Biderectional Search
+* Run two simultaneous searches - one forward from the initial state and the other backward from the goal - hoping that the two meet in the middle.
+* Complete? Yes, if `b` is finite and both directions use BFS
+* Optimal? Yes, if step costs are all identical and both directions use BFS
+* Time complexity?  O(b<sup>d/2</sup>)
+* Space complexity? (b<sup>d/2</sup>)
+#### 3.4.7 Comparing Uninformed Search Strategies
+* [Comparison table for uninformed search strategies](Images/uninformedComparison.PNG)
 ### 3.5 Heuristic Search Strategies
 * Strategies that know whether one non-goal state is "more promising" that another are called **informed search** or **heuristic search** strategies
