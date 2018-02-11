@@ -56,3 +56,14 @@
 * A *solution* to a problem is an action sequence that leads from the initial state to a goal state
 * The *optimal solution* has the lowest path cost among all solutions
 #### 3.1.2 Formulating Problems
+* The process of removing detail from a representation is called *abstraction*
+* The abstraction is valid if we can expand any abstract solution into a solution in the more detailed world; the abstraction is useful if carrying out each of the actions in the solution is easier than the original problem
+### 3.2 Example Problems
+* A *toy problem* is intended to illustrate various problem-solving methods
+* A *real-world* problem is one whose solutions people will actually care about
+* 8-queens problem: 8 queens are on an 8x8 chessboard. Find a positioning for each queen such that no two queens can attack each other.
+  1. States: Any arrangement of 0 to 8 queens on the board
+  2. Initial state: No queens on the board
+  3. Actions: Add a queen to any empty square
+  * Transition model: Returns the board with a queen added to the specified square
+  * Goal test: 8 queens are on the board, none are in the same row, column, or diagonal
