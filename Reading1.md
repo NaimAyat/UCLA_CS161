@@ -247,3 +247,9 @@
 #### 5.4.2 Cutting Off Search
 * We want to modify alpha-beta search so it will call the heuristic `Eval` funcion when it is appropriate to cut off the search
 * A problem is the *horizon effect*, which arises when the program is facing an opponent's m ove that causes serious damage and is ultimately unavoidable, but can be temporarily avoided by delaying tactics
+### 5.5 Stochastic Games
+* Stochastic games combine luck and skill (ie. dice are rolled)
+* Minimax trees must include chance nodes in addition to minimax nodes; positions will no longer have definite minimax values, but expected values
+#### 5.5.1 Evaluation Functions for Games of Chance
+* Use **Monte Carlo Simulation** to evaluate a position
+  * Start with alpha-beta algorithm. Have the algorithm play thousands of games against itself, using random dice rolls
