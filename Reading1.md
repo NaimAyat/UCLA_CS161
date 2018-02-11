@@ -122,8 +122,8 @@
 * Space complexity? bl
 #### 3.4.5 Iterative Deepening Depth-First Search
 * Gradually increases the depth limit until a goal is found.
-* Complete? When `b` is finite (like BFS)
-* Optimal? When the path cost is a nondecreasing function of the depth of the node (like BFS)
+* Complete? Yes, when `b` is finite (like BFS)
+* Optimal? Yes, when the path cost is a nondecreasing function of the depth of the node (like BFS)
 * Time complexity? O(b<sup>d</sup>) (like BFS)
 * Space complexity? bd (better than BFS)
 ### 3.5 Heuristic Search Strategies
