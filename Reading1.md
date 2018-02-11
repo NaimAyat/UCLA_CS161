@@ -235,3 +235,14 @@
   * β: value of the best (lowest-value) choice we have found at any choice point along the path for `min`
   * Alpha-Beta seach updates the values for alpha and beta as it goes along and prunes the remaining branches at a node (ie. terminates the recursive call) as soon as the node is known to be worse than the current alpha or beta value.
   * [Example search tree](Images/ab.PNG)
+#### 5.3.1 Move Ordering
+* Alpha-Beta time complexity: O(b<sup>m/2</sup>)
+### 5.4 Imperfect Real-Time Decisions
+* Minimax generates the entire game search space, whereas alpha-beta algorithm prunes large parts of it
+* The depth of minimax and A-B is usually not practical, so we can cut off the search earlier and apply a heuristic *evaluation function* to states in the search, effectively turning nonterminal nodes into terminal leaves
+  * Alter minimax or alpha-beta in two ways: replace the utility function by a heuristic evaluation function `Eval`, which estimates a position's utility, and replace the terminal test by a *cutoff test* that decides when to apply `Eval`
+#### 5.4.1 Evaluation Functions
+* Returns an estimate of the expected utility of the game from a given position, just as heuristic functions from Chapter 3 return an estimate of distance to the goal
+* A reasonable evaluation for states is *expected value*
+#### 5.4.2 Cutting Off Search
+* We want to modify alpha-beta search so it will call the heuristic `Eval` funcion when it is appropriate to cut off the search
