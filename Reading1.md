@@ -62,8 +62,8 @@
 * A *toy problem* is intended to illustrate various problem-solving methods
 * A *real-world* problem is one whose solutions people will actually care about
 * 8-queens problem: 8 queens are on an 8x8 chessboard. Find a positioning for each queen such that no two queens can attack each other.
-  1. States: Any arrangement of 0 to 8 queens on the board
-  2. Initial state: No queens on the board
-  3. Actions: Add a queen to any empty square
+  * States: Any arrangement of 0 to 8 queens on the board
+  * Initial state: No queens on the board
+  * Actions: Add a queen to any empty square (more intelligent action: add a queen to any square in the leftmost empty column such that it is not attacked by any other queen.
   * Transition model: Returns the board with a queen added to the specified square
   * Goal test: 8 queens are on the board, none are in the same row, column, or diagonal
