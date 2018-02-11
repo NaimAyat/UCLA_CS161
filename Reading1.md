@@ -295,3 +295,10 @@
 * CSPs are commutative if the order of application of any given set of actions has no effect on the outcome. All CSPs are commutative because when assigning values to variables, we reach the same parital assignment regardless of order
   * Therefore, we only need a single variable at each node in the search tree
 * **Backtracking search** defines a depth-first search that chooses values for one variable at a time and backtracks when a variable has no legal values left to assign
+#### 6.3.1 Variable and Value Ordering
+* Choose the next unassigned variable in order for `SelectUnassignedVariable(csp)`
+* Choosing the variable with the fewest "legal" values is called the *minimum-remaining-values* heuristic
+#### 6.3.2 Interleaving Search and Inference
+* Simplest form of inference is *forward checking*; when a variable X is assigned, the forward-checking process establishes arc consistency for it
+#### 6.3.3 Intelligent Backtracking: Looking Backward
+* BAcking up to the preceding variable and trying a differenct value when a branch of the search fails is called *chronological backtracking* because the most recent decision point is revisited
