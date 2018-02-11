@@ -291,5 +291,7 @@
 * A CSP is strongly k-consistent if it is k-consistent and also (k-1)-consistent, (k-2)-consistent... all the way down to 1-consistent
 #### 6.2.5 Global Constraints
 * Involve an arbitrary number of variables
-### 6.3
-* 
+### 6.3 Backtracking Search for CSPs
+* CSPs are commutative if the order of application of any given set of actions has no effect on the outcome. All CSPs are commutative because when assigning values to variables, we reach the same parital assignment regardless of order
+  * Therefore, we only need a single variable at each node in the search tree
+* **Backtracking search** defines a depth-first search that chooses values for one variable at a time and backtracks when a variable has no legal values left to assign
