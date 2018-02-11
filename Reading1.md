@@ -270,3 +270,7 @@
   * The domain of each variable: D<sub>i</sub> = {red, green, blue}
   * The constraints: C = {SA ≠ WA, SA ≠ NT, SA ≠ Q, SA ≠ NSW, SA ≠ V, WA ≠ NT, NT ≠ Q, Q ≠ NSW, NSW ≠ V}
   * [Create a constraint graph](Images/constraint.PNG)
+### 6.1.2 Example Problem: Job-Shop Scheduling
+* Variables: X = {Axle<sub>F</sub>, Axle<sub>B</sub>, Wheel<sub>RF</sub>, Wheel<sub>LF</sub>, Wheel<sub>RB</sub>, Wheel<sub>LB</sub>, Nuts<sub>RF</sub>, Nuts<sub>LF</sub>, Nuts<sub>RB</sub>, Nuts<sub>LB</sub>, Cap<sub>RF</sub>, Cap<sub>LF</sub>, Cap<sub>RB</sub>, Cap<sub>LB</sub>, Inspect}
+* Precedence constraints: For example, Axle<sub>F</sub> must be put on before Wheel<sub>RF</sub>
+* Assume the assembly must be done in 30 minutes: D<sub>i</sub> = {1, 2, 3, ..., 27}
