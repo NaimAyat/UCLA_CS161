@@ -221,3 +221,7 @@
   * `TerminalTest(s)`: A terminal test, which is true when the game is over and false otherwise. States where the game has ended are called terminal states
   * `Utility(s,p)`: A utility function defines the final numeric value for a game that ends in a terminal state `s` for player `p`. In chess, the outcome is a win (+1), loss (0), or draw (1/2). A zero-sum game is defined as one where the total payoff to all players is the same for every instance of the game. For example, the total payoff of a chess match is 1.
 ### 5.2 Optimal Decisions in Games
+* Given a game tree, the optimal strategy can be tetermined from the **minimax value** of each node, denoted as `Minimax(n)`. The minimax value of a node is the utility (for `max`) of being in the corresponding state, assuming that both players play optimally from there to the end of the game.
+#### 5.2.1 The Minimax Algorithm
+* Time complexity of minimax: O(b<sup>m</sup>)
+* Space complexity of minimax: bm if all actions generated at once; m if actions generated one at a time
