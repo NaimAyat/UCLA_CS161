@@ -97,6 +97,6 @@
 * [BFS](https://upload.wikimedia.org/wikipedia/commons/5/5d/Breadth-First-Search-Algorithm.gif) is a simple strategy in which the root node is expanded first, then all the successors of the root node are expanded next, then their successors, and so on. In general, all the nodes are expanded at a given depth in the search tree before any nodes at the next level are expanded.
   * Complete? Yes. If the shallowest goal node is at some finite depth `d`, BFS will eventually find it after generating all shallower nodes (provided the branching factor `b` is finite)
   * Optimal? No, unless the shallowest goal node is the optimal one
-  
+  * Time complexity? O(b<sup>d</sup>) (or O(b<sup>d+1</sup>) if the algorithm were to apply the goal test to nodes when selected for expansion rather than when generated)
 ### 3.5 Heuristic Search Strategies
 * Strategies that know whether one non-goal state is "more promising" that another are called **informed search** or **heuristic search** strategies
