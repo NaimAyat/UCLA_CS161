@@ -90,3 +90,11 @@
   * `b`, the branching factor (maximum number of succesors of any node)
   * `d`, the depth of the shallowest goal node (number of steps along the path from the root)
   * `m`, the maximum length of any path in the state space
+* To asses the effectiveness of a search algorithm, we can consider just the *search cost*, which typically depends on the time complexity but can also include a term for memory usage - or we can use the *total cost*, which combines the search cost and the path cost of the solution found
+### 3.4 Uninformed Search Strategies
+* Uninformed search strategies have no additional information about states beyond that provided in the problem definition. All they can do is generate successors and distinguish a goal state from a non-goal state.
+#### 3.4.1 Breadth-First-Search
+* [BFS](https://upload.wikimedia.org/wikipedia/commons/5/5d/Breadth-First-Search-Algorithm.gif) is a simple strategy in which the root node is expanded first, then all the successors of the root node are expanded next, then their successors, and so on. In general, all the nodes are expanded at a given depth in the search tree before any nodes at the next level are expanded.
+
+### 3.5 Heuristic Search Strategies
+* Strategies that know whether one non-goal state is "more promising" that another are called **informed search** or **heuristic search** strategies
