@@ -225,3 +225,4 @@
 #### 5.2.1 The Minimax Algorithm
 * Time complexity of minimax: O(b<sup>m</sup>)
 * Space complexity of minimax: bm if all actions generated at once; m if actions generated one at a time
+#### 5.2.2 Optimal Decisions in Multiplayer Games
