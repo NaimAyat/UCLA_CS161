@@ -253,3 +253,13 @@
 #### 5.5.1 Evaluation Functions for Games of Chance
 * Use **Monte Carlo Simulation** to evaluate a position
   * Start with alpha-beta algorithm. Have the algorithm play thousands of games against itself, using random dice rolls
+## Chapter 6: Constraint Satisfaction Problems
+* Constraint satisfaction problems use a *factored representation* for each state: a set of variables, each of which has a value
+  * A problem is solved when each variable has a value that satisfies all the constraints on the variable
+### 6.1 Defining Constraint Satisfaction Problems
+* Three components, X, D, and C:
+  * X is a set of variables {X<sub>1</sub>, ..., X<sub>n</sub>}
+  * D is a set of domains {D<sub>1</sub>, ..., D<sub>n</sub>}, one for each variable
+  * C is a set of constraints that specify allowable combinations of values
+  * Each domain D<sub>i</sub> consists of a set of allowable values {v<sub>1</sub>, ..., v<sub>2</sub>} for variable X<sub>i</sub>
+  * Each constraint C<sub>i</sub> consists of a pair <scope, rel> where scope is a tuple of variables that participate in the constraint and rel is a relation that defines the values that those variables can take on
