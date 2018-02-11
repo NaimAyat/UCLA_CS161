@@ -112,5 +112,15 @@
 * Complete? No, it could fall into an infinite loop
 * Optimal? No
 * Time complexity: O(b<sup>m</sup>)
+* Space complexity: bm
+* Takeaways: no clear advantages over BFS apart from much lower space complexity
+#### 3.4.4 Depth-Limited Search
+* Solves the problem of DFS getting caught in an infinite loop by defining a depth limit `l`. Nodes at depth `l` are treated as if they have no successors.
+* Complete? No, if we choose `l` < `d` (shallowest goal is beyond depth limit)
+* Optimal? No, if we choose `l` > `d`
+* Time complexity? O(b<sup>l</sup>)
+* Space complexity? bl
+#### 3.4.5 Iterative Deepening Depth-First Search
+
 ### 3.5 Heuristic Search Strategies
 * Strategies that know whether one non-goal state is "more promising" that another are called **informed search** or **heuristic search** strategies
