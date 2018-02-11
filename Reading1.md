@@ -163,4 +163,4 @@
 * A* is complete, optimal, and optimally efficient
   * However, for problems with constant step costs, the growth of run time as a function of the optimal solution depth `d` is analyzed in terms of the *absolute error* or *relative error* of the heuristic. 
     * Absolute error: Δ ≡ h* - h, where h* is the actual cost of getting from the root to the goal
-    * Relative error: e ≡ (h* - h) / h*
+    * Relative error: ε ≡ (h* - h) / h*
