@@ -134,5 +134,8 @@
 * Space complexity? (b<sup>d/2</sup>)
 #### 3.4.7 Comparing Uninformed Search Strategies
 * [Comparison table for uninformed search strategies](Images/uninformedComparison.PNG)
-### 3.5 Heuristic Search Strategies
+### 3.5 Informed (Heuristic) Search Strategies
 * Strategies that know whether one non-goal state is "more promising" that another are called **informed search** or **heuristic search** strategies
+* A node is selected for expansion based on an evaluation function, `f(n)`. The evaluation function is construed as a cost estimate, so the node with the lowest evaluation is expanded first. The implementation is identical to that for uniform-cost search, except for the use of `f` istead of `g` to order the priority queue
+* The choice of `f` determines the search strategy. Most best-first algorithms include a **heuristic function** `h(n)` as a component of `f`.
+* `h(n) = estimated cost of the cheapest path from the state at node n to a goal state`
