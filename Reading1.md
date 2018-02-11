@@ -81,3 +81,8 @@
   4. Path-cost: the cost, denoted by `g(n)`, of the path from the initial state to this node, as indicated by the parent pointers
 * Priority queue: pops the element of the queue with the highest priority according to some ordering function
 #### 3.3.2 Measuring Problem-Solving Performance
+* An algorithm's performance is evaluated in four ways:
+  * **Completeness**: is the algorithm guaranteed to find a solution when there is one?
+  * **Optimality**: Does the strategy find the optimal solution?
+  * **Time complexity**: How long does it take to find a solution?
+  * **Space complexity**: How much memory is needed to perform the search?
