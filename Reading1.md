@@ -246,3 +246,4 @@
 * A reasonable evaluation for states is *expected value*
 #### 5.4.2 Cutting Off Search
 * We want to modify alpha-beta search so it will call the heuristic `Eval` funcion when it is appropriate to cut off the search
+* A problem is the *horizon effect*, which arises when the program is facing an opponent's m ove that causes serious damage and is ultimately unavoidable, but can be temporarily avoided by delaying tactics
