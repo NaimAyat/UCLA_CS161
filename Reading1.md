@@ -139,3 +139,10 @@
 * A node is selected for expansion based on an evaluation function, `f(n)`. The evaluation function is construed as a cost estimate, so the node with the lowest evaluation is expanded first. The implementation is identical to that for uniform-cost search, except for the use of `f` istead of `g` to order the priority queue
 * The choice of `f` determines the search strategy. Most best-first algorithms include a **heuristic function** `h(n)` as a component of `f`.
 * `h(n) = estimated cost of the cheapest path from the state at node n to a goal state`
+#### 3.5.1 Greedy Best-First Search
+* Tries to expand the node closest to the goal on the grounds that this is likely to lead to a solution quickly. Thus, it evaluates nodes by using just the heuristic function: that is, `f(n) = h(n)`
+* We can use the **straight-line distance** heuristic, denoted h<sub>SLD</sub>. 
+* Complete? No, could get stuck in an infinite loop
+* Optimal? No, greedy algorithm is not always optimal
+* Time complexity? O(b<sup>m</sup>)
+* Space complexity? (b<sup>m</sup>)
