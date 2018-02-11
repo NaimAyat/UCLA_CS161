@@ -32,3 +32,26 @@
 * If an agent's sensors give it acces to the complete state of the environment at each point in time, then the task environment is *fully observable*. Otherwise, it is *partially observable*. For example, an automated taxi cannot observe what other drivers are thinking.
 * If the next state of the environment is completely determined by the current state and the action executed by the environment, then the environment is *deterministic*. Otherwise, it is *stochastic*.
 ## Chapter 3: Solving Problems by Searching
+* Uninformed search algorithms: algorithms given no information about the problem other than its definition
+* Informed search algorithms: given guidance on where to look for solutions
+### 3.1 Problem-Solving Agents
+* **Goal formulation**: finding the set of world states in which a goal is satisfied. This is the first step in problem solving.
+* **Problem formulation**: process of deciding what actions and states to consider, given a goal. This is the second step in problem-solving.
+* Observable environment: the agent always knows the current state
+* Discrete environment: there are finitely actions to choose from (as opposed to infinte actions in a continous environment)
+* Detministic: each action has exactly one outcome
+#### 3.1.1 Well-Defined Problems and Solutions
+* A **problem** is defined formally by five components:
+  1. The **initial state** that the agent starts in.
+  2. A description of possible **actions** available to the agent.
+  3. A description of what each action does (the **transition model**), specified by a function `result(s,a)` that returns the state that results from doing action `a` in state `s`. 
+     * We also use the term *successor* to refer to any state reachable from a given state by a single action. 
+     * Together, the inital state, actions, and transition model define the *state space* of the problem - the set of all states reachable from the initial state by any sequence of actions. 
+     * The state space forms a directed *graph* in which the nodes are states and the links are actions.
+     * A *path* in the state space is a sequence of states connected by a sequence of actions.
+  4. The **goal test** determines whether a given state is a goal state.
+  5. A **path cost** function that assigns a numeric cost to each path. The problem-solving agent chooses a cost function that reflects its own performance measure
+     * The *step cost* of taking action `a` in a state `s` to reach state `s'` is denoted by `c(s,a,s')`.
+* The preceding elements define a problem and can be gathered into a single data structute that is given as input to a problem-solving algorithm
+* A *solution* to a problem is an action sequence that leads from the initial state to a goal state
+* The *optimal solution* has the lowest path cost among all solutions
