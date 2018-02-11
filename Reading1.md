@@ -202,3 +202,8 @@
 * The idea behind pattern databases is to store the exact solution costs for every possible 
 #### 3.6.4 Learning Heuristics from Experience
 * A heuristic function `h(n)` is supposed to estimate the cost of a solution beginning from the state at node `n`
+## Chapter 5: Adversarial Search
+* Adverserial search problem: competive environments (ie. games)
+* Game theory: any multiangent environment is a "game"
+* In arificial intelligence, the most common type of game are turn-taking, two-player, **zero-sum games** of **perfect information**
+  * In other words, these games have deterministic, fully observable environments in which two agents act alternately and in which the utility alues at the end of the game are always equal and opposite. For example, if one player wins in chess, the other player necessarily loses
