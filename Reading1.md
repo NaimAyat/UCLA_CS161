@@ -1,5 +1,5 @@
 # *Artificial Intelligence: A Modern Approach* - Norvig & Russel (2010)
-# Chapters 1, 2, 3, 5, 6, 7
+# Chapters 1, 2, 3, 5, 6
 ## Chapter 1: Introduction
 ### 1.1 What is AI?
 * Possible definition: machines that think and act rationally
@@ -302,3 +302,5 @@
 * Simplest form of inference is *forward checking*; when a variable X is assigned, the forward-checking process establishes arc consistency for it
 #### 6.3.3 Intelligent Backtracking: Looking Backward
 * BAcking up to the preceding variable and trying a differenct value when a branch of the search fails is called *chronological backtracking* because the most recent decision point is revisited
+### 6.5 The Structure of Problems
+* To solve a tree-structured CSP, pick any variable to be the root of the tree. Choose any ordering of the variables such that each variable appears after its parent in the tree. This is called a **topological sort**
