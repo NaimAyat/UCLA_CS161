@@ -79,3 +79,5 @@
   2. Parent: the node in the search tree that generated this node
   3. Action: the action that was applied to the parent to generate this node
   4. Path-cost: the cost, denoted by `g(n)`, of the path from the initial state to this node, as indicated by the parent pointers
+* Priority queue: pops the element of the queue with the highest priority according to some ordering function
+#### 3.3.2 Measuring Problem-Solving Performance
