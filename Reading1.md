@@ -121,6 +121,10 @@
 * Time complexity? O(b<sup>l</sup>)
 * Space complexity? bl
 #### 3.4.5 Iterative Deepening Depth-First Search
-
+* Gradually increases the depth limit until a goal is found.
+* Complete? When `b` is finite (like BFS)
+* Optimal? When the path cost is a nondecreasing function of the depth of the node (like BFS)
+* Time complexity? O(b<sup>d</sup>) (like BFS)
+* Space complexity? bd (better than BFS)
 ### 3.5 Heuristic Search Strategies
 * Strategies that know whether one non-goal state is "more promising" that another are called **informed search** or **heuristic search** strategies
