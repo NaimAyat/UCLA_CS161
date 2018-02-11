@@ -234,3 +234,4 @@
   * α: value of the best (highest-value) choice we have found at any choice point along the path for `max`
   * β: value of the best (lowest-value) choice we have found at any choice point along the path for `min`
   * Alpha-Beta seach updates the values for alpha and beta as it goes along and prunes the remaining branches at a node (ie. terminates the recursive call) as soon as the node is known to be worse than the current alpha or beta value.
+  * [Example search tree](Images/ab.PNG)
