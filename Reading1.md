@@ -170,3 +170,20 @@
   * O(b<sup>εd</sup>)
 * Branching factor: b<sup>ε</sup>
 #### 3.5.3 Memory-Bounded Heuristic Search
+* To reduce memory requirements for A*, we can use **iterative-deepening A* (IDA*)**
+  * Cutoff is the f-cost `g+h` rather than depth. At each iteration, the cutoff value is the smallest f-cost of any node that exceeded the cutoff on the previous iteration
+* **Recursive Best-First Search (RBFS)** attempts to mimic the operation of standard best-first search, but using only linear space.
+  * RBFS replaces the f-value of each node along the path with a *backed-up* value, the best f-value of its children
+  * Optimal if heuristic `h(n)` is admissible
+* IDA* and RBFS use too little memory
+  * IDA* retains only a single number between iterations (current f-cost limit)
+  * RBFS retains more information, but only uses linear space
+  * Because these algorithms forget most of what they have done, they expand the same states many times over
+* **Memory-Bounded A* (MA*)** and **Simplified MA* (SMA*)** use all available memory
+  * SMA* proceeds like A*, expanding the best leaf until memory is full. It always drops the worst leaf node - the one with the highest f-value. 
+    * Complete if there is any reachable solution (if `d` is less than the memory size)
+    * Optimal if any optimal solution is reachable
+#### 3.5.4 Learning to Search Better
+* An agent can learn to search better using **metalevel state space**
+  * Each state in a metalevel state space captures the internal state of a program that is searching in an *object-level state space*
+### 3.6 Heuristic Functions
