@@ -150,3 +150,5 @@
 * Evaluate nodes by combining `g(n)`, the cost to reach the node, and `h(n)`, the cost to get from the node to the goal: `f(n) = g(n) + h(n)`
 * Since `g(n)` gives the path cost from the start node to node `n` and `h(n)` is the estimated cost of the cheapest path from `n` to the goal, we have `f(n) = estimated cost of the cheapest solution through n`
 * Algorithm identical to Uniform-Cost Search, but A* uses `g + h` instead of `g`
+##### Conditions for Optimality: Admissibility and Consistency
+* `h(n)` must be an **admissible heuristic** for optimality. This means that it never overestimates the cost to reach the goal. Because `g(n)` is the actual cost to reach `n` along the current path, and `f(n) = g(n) + h(n)`, we know that `f(n)` never overestimates the true cost of a solution along the current path through `n`.
