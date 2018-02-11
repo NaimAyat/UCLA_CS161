@@ -86,3 +86,7 @@
   * **Optimality**: Does the strategy find the optimal solution?
   * **Time complexity**: How long does it take to find a solution?
   * **Space complexity**: How much memory is needed to perform the search?
+* Complexity is expressed in terms of three quantities:
+  * `b`, the branching factor (maximum number of succesors of any node)
+  * `d`, the depth of the shallowest goal node (number of steps along the path from the root)
+  * `m`, the maximum length of any path in the state space
