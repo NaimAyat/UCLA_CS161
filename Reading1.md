@@ -146,3 +146,5 @@
 * Optimal? No, greedy algorithm is not always optimal
 * Time complexity? O(b<sup>m</sup>)
 * Space complexity? (b<sup>m</sup>)
+#### 3.5.2 A* Search: Minimizing the Total Estimated Solution Cost
+* Evaluate nodes by combining `g(n)`, the cost to reach the node, and `h(n)`, the cost to get from the node to the goal: `f(n) = g(n) + h(n)`
