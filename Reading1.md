@@ -207,3 +207,17 @@
 * Game theory: any multiangent environment is a "game"
 * In arificial intelligence, the most common type of game are turn-taking, two-player, **zero-sum games** of **perfect information**
   * In other words, these games have deterministic, fully observable environments in which two agents act alternately and in which the utility alues at the end of the game are always equal and opposite. For example, if one player wins in chess, the other player necessarily loses
+* We begin with a definition of the optimal move and an algorithm for finding it
+  * *Pruning* allows us to ignore portions of the search tree that have no difference to the final choice
+  * Heuristic *evaluation functions* allow us to approximate the true utility of a state without doing a complete search
+* We consider games with two players, whome we call `max` and `min`
+  * `max` moves first, and they take turns moving until the game is over
+  * At the end of the game, points are awarded to the winning player and penalties are given to the loser
+* A game can be formally defined as a search problem with the following elements:
+  * S<sub>0</sub>: The initial state, which specifies how the game is set up at the start
+  * `Player(s)`: Defines which player has the move in a state
+  * `Actions(s)`: Returns the legal set of moves in a state
+  * `Result(s,a)`: The transition model, which defines the result of a move
+  * `TerminalTest(s)`: A terminal test, which is true when the game is over and false otherwise. States where the game has ended are called terminal states
+  * `Utility(s,p)`: A utility function defines the final numeric value for a game that ends in a terminal state `s` for player `p`. In chess, the outcome is a win (+1), loss (0), or draw (1/2). A zero-sum game is defined as one where the total payoff to all players is the same for every instance of the game. For example, the total payoff of a chess match is 1.
+### 5.2 Optimal Decisions in Games
