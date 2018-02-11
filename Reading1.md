@@ -95,15 +95,22 @@
 * Uninformed search strategies have no additional information about states beyond that provided in the problem definition. All they can do is generate successors and distinguish a goal state from a non-goal state.
 #### 3.4.1 Breadth-First-Search
 * [BFS](https://upload.wikimedia.org/wikipedia/commons/5/5d/Breadth-First-Search-Algorithm.gif) is a simple strategy in which the root node is expanded first, then all the successors of the root node are expanded next, then their successors, and so on. In general, all the nodes are expanded at a given depth in the search tree before any nodes at the next level are expanded.
+* Uses a FIFO queue
 * Complete? Yes. If the shallowest goal node is at some finite depth `d`, BFS will eventually find it after generating all shallower nodes (provided the branching factor `b` is finite)
 * Optimal? No, unless the shallowest goal node is the optimal one
 * Time complexity? O(b<sup>d</sup>) (or O(b<sup>d+1</sup>) if the algorithm were to apply the goal test to nodes when selected for expansion rather than when generated)
-* Space complexity? O(b<sup>d</sup>) (or O(b<sup>d+1</sup>) if the algorithm were to apply the goal test to nodes when selected for expansion rather than when generated)
+* Space complexity? b<sup>d</sup> (or b<sup>d+1</sup> if the algorithm were to apply the goal test to nodes when selected for expansion rather than when generated)
 * Takeaway: the memory requirements are a bigger problem for BFS than the execution time. However, time is still a major factor. In general, exponential-complexity search problems cannot be solved by uninformed methods for any but the smallest instances
 #### 3.4.2 Uniform-Cost Search
 * When all step costs are equal, BFS search is optimal because it always expands the shallowest unexpanded node. Instead of expanding the shallowest node, uniform-cost search expands the node `n` with the lowest path cost `g(n)`. This is done by storing the fronteir as a priority queue ordered by `g`. 
 * The goal test is applied to a node when it is selected for expansion rather than when it is first generated.
 * A test is added in case a better path is found to a node currently on the frontier.
-* Time complexity: let C* be the cost of the optimal solution, and assume that every action costs at least e. Then the time and space complexity is O(b<sup>1+[C*/e]</sup>), which can be much greater than b<sup>d</sup>. When all step costs are equal, (b<sup>1+[C*/e]</sup> is just b<sup>d+1</sup>.
+* Time complexity: let C* be the cost of the optimal solution, and assume that every action costs at least e. Then the time and space complexity is O(b<sup>1+[C*/e]</sup>), which can be much greater than b<sup>d</sup>. When all step costs are equal, b<sup>1+[C*/e]</sup> is just b<sup>d+1</sup>.
+#### 3.4.3 Depth-First Search
+* [DFS](https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif) always expands the deepest node in the current frontier of the search tree
+* Uses a LIFO queue
+* Complete? No, it could fall into an infinite loop
+* Optimal? No
+* Time complexity: O(b<sup>m</sup>)
 ### 3.5 Heuristic Search Strategies
 * Strategies that know whether one non-goal state is "more promising" that another are called **informed search** or **heuristic search** strategies
