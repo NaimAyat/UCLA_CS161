@@ -304,3 +304,8 @@
 * BAcking up to the preceding variable and trying a differenct value when a branch of the search fails is called *chronological backtracking* because the most recent decision point is revisited
 ### 6.5 The Structure of Problems
 * To solve a tree-structured CSP, pick any variable to be the root of the tree. Choose any ordering of the variables such that each variable appears after its parent in the tree. This is called a **topological sort**
+* General algorithm:
+  1. Choose a subset S of the CSP's variables such that the constraint graph becomes a tree after removal of S. S is called a *cycle cutset*
+  2. For each possible assignment to the variables in S that satisfies all constraints on S:
+     1. Remove from the domains of the remaining variables any values that are inconsistent with the assignment for S
+     2. If the remaining CSP has a solution, return it together with the assignment for S
