@@ -53,7 +53,7 @@
 * Pure symbol heuristic: A pure symbol is a symbol that always appears with the same “sign” in all clauses. For example, in the three clauses (A ∨ ¬B), (¬B ∨ ¬C), and (C ∨ A), the symbol A is pure because only the positive literal appears, B is pure because only the negative literal appears, and C is impure
 * Unit clause heuristic: A unit clause was defined earlier as a clause with just one literal. In the context of Davis–Putnam algorithm, it also means clauses in which all literals but one are already assigned false by the model.
 ### Chapter 8: First-Order Logic
-##### 8.2 Syntax and Semantics of First-Order Logic
+#### 8.2 Syntax and Semantics of First-Order Logic
 * Add objects to propositional logic, which only contains facts
 * Domain: set of objects or domain elements a model contains
 * A relation is just the set of tuples of objects that are related
@@ -61,16 +61,28 @@
 * Certain kinds of relationships are best considered as functions, in that a given object must be related to exactly one object in this way. For example, each person has one left leg, so the model has a unary “left leg” function that includes the following mappings:
   * < Richard the Lionheart > → Richard’s left leg
   * < King John > → John’s left leg
-###### 8.2.3 Terms
+##### 8.2.3 Terms
 * A term is a logical expression that refers to an object
 * Instead of using a constant symbol, we use LeftLeg(John). In the general case, a complex term is formed by a function symbol followed by a parenthesized list of terms as arguments to the function symbol.
-###### 8.2.4 Atomic sentences
+##### 8.2.4 Atomic sentences
 * Atomic sentence / atom: formed from a predicate symbol optionally followed by a parenthesized list of terms, such as Brother (Richard , John).
-###### 8.2.5 Complex sentences
+##### 8.2.5 Complex sentences
 * We can use logical connectives to construct more complex sentences, with the same syntax and semantics as in propositional calculus
   * Example: ¬Brother (LeftLeg(Richard), John)
-###### 8.2.6 Quantifiers
+##### 8.2.6 Quantifiers
 * Universal quantification (∀): all kings are persons (∀x King(x) ⇒ Person(x))
 * Existential quantification (∃): there exists some crown on John's head (∃x Crown(x) ∧ OnHead(x, John))
 ###### Connections between ∀ and ∃
 * Asserting that everyone dislikes parsnips is the same as asserting there does not exist someone who likes them, and vice versa
+##### 8.2.7 Equality
+* We can use the equality symbol to signify that two terms refer to the same object. For example, Father(John) = Henry
+#### 8.3 Using First-Order Logic
+##### 8.3.1 Assertions and queries in first-order logic
+* Sentences are added to a knowledge base using TELL, exactly as in propositional logic. Such sentences are called assertions
+* For example, we can assert to our knowledge base that John is a king: TELL(KB, King(John))
+### Chapter 9: Inference in First-Order Logic
+#### 9.2.1 A first-order inference rule
+* The inference that John is evil: {x/John} solves the query Evil(x)
+#### 9.2.2 Unification
+* Think Prolog
+  * UNIFY(Knows(John, x), Knows(John, Jane)) = {x/Jane}
