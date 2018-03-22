@@ -22,3 +22,7 @@
     4. When agent walks into a wall, it will perceive a *bump*
     5.  When wumpus is killed, it emits a *scream* that can be perceived anywhere in the cave
     * The percepts will be given to the agent in the form of a list of five symbols. For example, if there is a stench and a breeze, but no glitter, bump, or scream, the agent program will get [Stench, Breeze, None, None, None].
+#### 7.3 Logic
+* Model: possible world
+* If a sentence A is true in model M, then we say M satisfies A or that M is a model of A
+* *Entailment*: a sentence follows from another. A |= B means "A entails B"
