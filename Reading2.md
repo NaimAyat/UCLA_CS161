@@ -105,3 +105,4 @@
 #### 13.5 Bayes' Rule and its Use
 * Product rule: P(a ∧ b) = P(a|b)P(b) and P(a ∧ b) = P(b|a)P(a)
 * Bayes' rule: P(b|a) = P(a|b)P(b) / P(a)
+  * Useful when we know P(a|b), P(b), and P(a) and want to compute P(b|a)
