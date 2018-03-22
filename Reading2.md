@@ -48,3 +48,7 @@
 * Definite clause: disjunction of literals of which exactly one is positive
 * Horn clause: disjunction of literals of which at most one is positive
 * Goal clause: a Horn clause with no positive literals
+###### 7.6.1 A complete backtracking algorithm
+* Early termination: The algorithm detects whether the sentence must be true or false, even with a partially completed model. A clause is true if any literal is true, even if the other literals do not yet have truth values; hence, the sentence as a whole could be judged true even before the model is complete
+* Pure symbol heuristic: A pure symbol is a symbol that always appears with the same “sign” in all clauses. For example, in the three clauses (A ∨ ¬B), (¬B ∨ ¬C), and (C ∨ A), the symbol A is pure because only the positive literal appears, B is pure because only the negative literal appears, and C is impure
+* Unit clause heuristic: A unit clause was defined earlier as a clause with just one literal. In the context of Davis–Putnam algorithm,, it also means clauses in which all literals but one are already assigned false by the model.
