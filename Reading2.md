@@ -42,5 +42,9 @@
 * Modus Ponens: whenever any sentences of the form α ⇒ β and α are given, then the sentence β can be inferred
 * And-Elimination: from a conjunction, any of the conjuncts can be inferred
 * [De Morgan's Laws](https://i.ytimg.com/vi/i7NAjjMGIoA/maxresdefault.jpg)
-####### Converting to CNF
+###### Converting to CNF
 [Steps for converting to CNF](http://slideplayer.com/slide/5028323/16/images/5/Converting+to+CNF+Any+wff+can+be+converted+to+CNF+by+using+the+following+equivalences:+(1)+A+%E2%86%94+B+%EF%82%BA+(A+%E2%86%92+B)+%CE%9B+(B+%E2%86%92+A).jpg)
+###### 7.5.3 Horn clauses and definite clauses
+* Definite clause: disjunction of literals of which exactly one is positive
+* Horn clause: disjunction of literals of which at most one is positive
+* Goal clause: a Horn clause with no positive literals
