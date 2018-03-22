@@ -25,4 +25,6 @@
 #### 7.3 Logic
 * Model: possible world
 * If a sentence A is true in model M, then we say M satisfies A or that M is a model of A
+  * M(A) means the set of all models of A
 * *Entailment*: a sentence follows from another. A |= B means "A entails B"
+  * A =| B if and only if M(A) ⊆ M(B)
