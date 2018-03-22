@@ -51,4 +51,13 @@
 ###### 7.6.1 A complete backtracking algorithm
 * Early termination: The algorithm detects whether the sentence must be true or false, even with a partially completed model. A clause is true if any literal is true, even if the other literals do not yet have truth values; hence, the sentence as a whole could be judged true even before the model is complete
 * Pure symbol heuristic: A pure symbol is a symbol that always appears with the same “sign” in all clauses. For example, in the three clauses (A ∨ ¬B), (¬B ∨ ¬C), and (C ∨ A), the symbol A is pure because only the positive literal appears, B is pure because only the negative literal appears, and C is impure
-* Unit clause heuristic: A unit clause was defined earlier as a clause with just one literal. In the context of Davis–Putnam algorithm,, it also means clauses in which all literals but one are already assigned false by the model.
+* Unit clause heuristic: A unit clause was defined earlier as a clause with just one literal. In the context of Davis–Putnam algorithm, it also means clauses in which all literals but one are already assigned false by the model.
+### Chapter 8: First-Order Logic
+#### 8.2 Syntax and Semantics of First-Order Logic
+* Add objects to propositional logic, which only contains facts
+* Domain: set of objects or domain elements a model contains
+* A relation is just the set of tuples of objects that are related
+  * { <Richard the Lionheart, King John>, <King John, Richard the Lionheart> }
+* Certain kinds of relationships are best considered as functions, in that a given object must be related to exactly one object in this way. For example, each person has one left leg, so the model has a unary “left leg” function that includes the following mappings:
+  * <Richard the Lionheart> → Richard’s left leg
+  * <King John> → John’s left leg
