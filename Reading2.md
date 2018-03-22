@@ -106,3 +106,16 @@
 * Product rule: P(a ∧ b) = P(a|b)P(b) and P(a ∧ b) = P(b|a)P(a)
 * Bayes' rule: P(b|a) = P(a|b)P(b) / P(a)
   * Useful when we know P(a|b), P(b), and P(a) and want to compute P(b|a)
+### Chapter 14: Probabilistic Reasoning
+#### 14.1 Representing Knowledge in an Uncertain Domain
+* A Bayesian network is a directed graph in which each node is annotated with quantitative probability information
+  1. Each node corresponds to a random variable
+  2. A set of directed links or arrows connects pairs of nodes. If there is an arrow from node X to Y, X is said to be a parent of Y
+  3. Each node X<sub>i</sub> has a conditional probability distribution P(X<sub>i</sub>|Parents(X<sub>i</sub>)) that quantifies the effect of the parents on the node
+#### 14.2 Semantics of Bayesian Networks
+* To construct a Bayesian network:
+  1. Nodes: Determine the set of variables that are required to model the domain. Now order them, {X<sub>1</sub>, ... , <sub>n</sub>}. Any order will work, but the resulting network will be more compact if the variables are ordered such that causes precede effects.
+  2. Links: for i=1 to n, do:
+     * Choose, from X<sub>1</sub>,..., X<sub>i-1</sub>, a minimal set of parents X<sub>i</sub>, such that the equation P(X<sub>i</sub>|X<sub>X-1</sub>...,X<sub>1</sub>) = P(X<sub>i</sub>|Parents(X<sub>i</sub>)) is satisfied
+     * For each parent, insert a link from the parent to X<sub>i</sub>
+     * CPTs: Write the conditional probability table, P(X<sub>i</sub>|Parents(X<sub>i</sub>))
