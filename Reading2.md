@@ -86,3 +86,12 @@
 #### 9.2.2 Unification
 * Think Prolog
   * UNIFY(Knows(John, x), Knows(John, Jane)) = {x/Jane}
+#### 9.5.1 Conjunctive normal form for first-order logic
+1. Eliminate Implications
+2. Move negations inwards:
+   * ¬∀x p becomes ∃x ¬p
+   * ¬∃x p becomes ∀x ¬p
+3. Standardize variables: For sentences like (∃xP(x))∨(∃xQ(x)) which use the same variable name twice, change the name of one of the variables. This avoids confusion later when we drop the quantifiers. 
+4. Skolemize: Skolemization is the process of removing existential quantifiers by elimination. The general rule is that the arguments of the Skolem function are all the universally quantified variables in whose scope the existential quantifier appears. As with Existential Instantiation, the Skolemized sentence is satisfiable exactly when the original sentence is satisfiable.
+5. Drop universal quantifiers: At this point, all remaining variables must be universally quantified. Moreover, the sentence is equivalent to one in which all the universal quantifiers have been moved to the left. We can therefore drop the universal quantifiers
+6. Distribute ∨ over ∧
