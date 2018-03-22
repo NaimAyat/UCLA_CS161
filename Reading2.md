@@ -28,3 +28,9 @@
   * M(A) means the set of all models of A
 * *Entailment*: a sentence follows from another. A |= B means "A entails B"
   * A =| B if and only if M(A) ⊆ M(B)
+#### 7.4 Propositional Logic
+##### 7.5 Syntax
+* [Truth tables for the five logical connectives](http://images.slideplayer.com/26/8636033/slides/slide_20.jpg)
+* Operator precedence: ~, ∧, ∨, ->, <->
+##### 7.5 Propositional Theorem Proving
+* Logical equivalence: two sentences A and B are logically equivalent if they are true in the same set of models. A and B are equivalent if and only iff A <-> B (which is true only if A |= B and B |= A
