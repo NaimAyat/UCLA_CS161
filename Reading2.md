@@ -95,3 +95,13 @@
 4. Skolemize: Skolemization is the process of removing existential quantifiers by elimination. The general rule is that the arguments of the Skolem function are all the universally quantified variables in whose scope the existential quantifier appears. As with Existential Instantiation, the Skolemized sentence is satisfiable exactly when the original sentence is satisfiable.
 5. Drop universal quantifiers: At this point, all remaining variables must be universally quantified. Moreover, the sentence is equivalent to one in which all the universal quantifiers have been moved to the left. We can therefore drop the universal quantifiers
 6. Distribute ∨ over ∧
+### Chapter 13: Quantifying Uncertainty
+#### 13.2 Basic Probability Notation
+##### 13.2.1 What probabilities are about
+* Sample space: set of all possible worlds
+* Probability of A given B: P(A|B) = P(A ∧ b) / P(B)
+##### 13.2.3 Probability axioms and their reasonableness
+* P(a ∨ b) = P(a) + P(b) − P(a ∧ b)
+#### 13.5 Bayes' Rule and its Use
+* Product rule: P(a ∧ b) = P(a|b)P(b) and P(a ∧ b) = P(b|a)P(a)
+* Bayes' rule: P(b|a) = P(a|b)P(b) / P(a)
