@@ -119,3 +119,4 @@
      * Choose, from X<sub>1</sub>,..., X<sub>i-1</sub>, a minimal set of parents X<sub>i</sub>, such that the equation P(X<sub>i</sub>|X<sub>X-1</sub>...,X<sub>1</sub>) = P(X<sub>i</sub>|Parents(X<sub>i</sub>)) is satisfied
      * For each parent, insert a link from the parent to X<sub>i</sub>
      * CPTs: Write the conditional probability table, P(X<sub>i</sub>|Parents(X<sub>i</sub>))
+* Markov blanket: parents, children, and children's parents of a node
