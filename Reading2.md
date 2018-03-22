@@ -34,3 +34,13 @@
 * Operator precedence: ~, ∧, ∨, ->, <->
 ##### 7.5 Propositional Theorem Proving
 * Logical equivalence: two sentences A and B are logically equivalent if they are true in the same set of models. A and B are equivalent if and only iff A <-> B (which is true only if A |= B and B |= A
+* Validity: a sentence is valid if it is true in all models. Also known as tautologies
+  * For any sentences α and β, α |= β if and only if the sentence (α -> β) is valid
+* Satisfiability: sentence is satisfiable if it is true in, or satisfied by, some model
+  * α |= β if and only if the sentence (α ∧ ¬β) is unsatisfiable
+###### 7.5.1 Inference and Proofs
+* Modus Ponens: whenever any sentences of the form α ⇒ β and α are given, then the sentence β can be inferred
+* And-Elimination: from a conjunction, any of the conjuncts can be inferred
+* [De Morgan's Laws](https://i.ytimg.com/vi/i7NAjjMGIoA/maxresdefault.jpg)
+####### Converting to CNF
+[Steps for converting to CNF](http://slideplayer.com/slide/5028323/16/images/5/Converting+to+CNF+Any+wff+can+be+converted+to+CNF+by+using+the+following+equivalences:+(1)+A+%E2%86%94+B+%EF%82%BA+(A+%E2%86%92+B)+%CE%9B+(B+%E2%86%92+A).jpg)
