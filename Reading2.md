@@ -72,3 +72,5 @@
 ###### 8.2.6 Quantifiers
 * Universal quantification (∀): all kings are persons (∀x King(x) ⇒ Person(x))
 * Existential quantification (∃): there exists some crown on John's head (∃x Crown(x) ∧ OnHead(x, John))
+###### Connections between ∀ and ∃
+* Asserting that everyone dislikes parsnips is the same as asserting there does not exist someone who likes them, and vice versa
