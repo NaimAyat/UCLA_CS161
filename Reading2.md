@@ -59,5 +59,5 @@
 * A relation is just the set of tuples of objects that are related
   * { <Richard the Lionheart, King John>, <King John, Richard the Lionheart> }
 * Certain kinds of relationships are best considered as functions, in that a given object must be related to exactly one object in this way. For example, each person has one left leg, so the model has a unary “left leg” function that includes the following mappings:
-  * <Richard the Lionheart> → Richard’s left leg
-  * <King John> → John’s left leg
+  * < Richard the Lionheart > → Richard’s left leg
+  * < King John > → John’s left leg
