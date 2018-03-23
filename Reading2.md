@@ -130,3 +130,5 @@
 * A truth table over n attributes has 2<sup>n</sup> rows
 #### 18.3.4 Choosing attribute tests
 * Entropy: the fundamental quantity in information theory; the uncertainty of a random variable
+## Misc.
+[To calculate hypothesis space](https://stats.stackexchange.com/questions/188186/how-to-calculate-hypothesis-space?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
