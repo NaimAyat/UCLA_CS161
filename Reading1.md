@@ -102,6 +102,7 @@
 * Space complexity? b<sup>d</sup> (or b<sup>d+1</sup> if the algorithm were to apply the goal test to nodes when selected for expansion rather than when generated)
 * Takeaway: the memory requirements are a bigger problem for BFS than the execution time. However, time is still a major factor. In general, exponential-complexity search problems cannot be solved by uninformed methods for any but the smallest instances
 #### 3.4.2 Uniform-Cost Search
+* [Example](https://www.youtube.com/watch?v=9vNvrRP0ymw)
 * When all step costs are equal, BFS search is optimal because it always expands the shallowest unexpanded node. Instead of expanding the shallowest node, uniform-cost search expands the node `n` with the lowest path cost `g(n)`. This is done by storing the fronteir as a priority queue ordered by `g`. 
 * The goal test is applied to a node when it is selected for expansion rather than when it is first generated.
 * A test is added in case a better path is found to a node currently on the frontier.
