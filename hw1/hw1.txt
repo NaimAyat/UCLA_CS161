@@ -1,0 +1,74 @@
+QUESTION 1:
+
+    Testing the PAD function for the first fifteen Padovan numbers yields the
+    following results:
+
+        (PAD 0) returns 1
+        (PAD 1) returns 1
+        (PAD 2) returns 1
+        (PAD 3) returns 2
+        (PAD 4) returns 2
+        (PAD 5) returns 3
+        (PAD 6) returns 4
+        (PAD 7) returns 5
+        (PAD 8) returns 7
+        (PAD 9) returns 9
+        (PAD 10) returns 12
+        (PAD 11) returns 16
+        (PAD 12) returns 21
+        (PAD 13) returns 28
+        (PAD 14) returns 37
+
+    These results are all in accordance with the definition of the Padovan
+    sequence. Note that as the value of N increases, the function slows down
+    exponentially. This is due to the nature of the recursive call. For each
+    execution, PAD recursively calculates the Padovan number for every
+    nonnegative integer less than the input N. Therefore, the program times
+    out for large values of N (approximately N>60 in my testing environment).
+
+
+QUESTION 2:
+
+    Testing the SUMS function for the first fifteen values numbers yields the
+    following results:
+
+        (SUMS 0) returns 0
+        (SUMS 1) returns 0
+        (SUMS 2) returns 0
+        (SUMS 3) returns 1
+        (SUMS 4) returns 1
+        (SUMS 5) returns 2
+        (SUMS 6) returns 3
+        (SUMS 7) returns 4
+        (SUMS 8) returns 6
+        (SUMS 9) returns 8
+        (SUMS 10) returns 11
+        (SUMS 11) returns 15
+        (SUMS 12) returns 20
+        (SUMS 13) returns 27
+        (SUMS 14) returns 36
+
+    Note that each SUMS result is its corresponding PAD result minus one. This
+    is because the base case of PAD returns 1, while the base case of SUMS
+    returns 0. At the lowest level, each Padovan number is the result of 
+    summed 1s. In other words, there are a total of (PAD N) 1s that are summed
+    to generate the result for (PAD N). Consequently, there are ((PAD N) - 1)
+    addition operations in total. Hence, ((SUMS N) = (PAD N) - 1)).
+
+
+QUESTION 3:
+
+    Running the ANON function with the test cases provided in the spec yields
+    the correct expected output:
+
+        (ANON '42) returns ?
+        (ANON 'FOO) returns ?
+        (ANON '(((L E) F) T)) returns (((? ?) ?) ?)
+        (ANON '(5 FOO 3.1 -0.2)) returns (? ? ? ?)
+        (ANON '(1 (FOO 3.1) -0.2)) returns (? (? ?) ?)
+        (ANON '(((1 2) (FOO 3.1)) (BAR -0.2))) returns (((? ?) (? ?)) (? ?))
+        (ANON '(R (I (G (H T))))) returns (? (? (? (? ?))))
+
+    An additional test confirms the base case for empty trees:
+
+        (ANON '()) returns NIL

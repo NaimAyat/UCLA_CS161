@@ -1,0 +1,50 @@
+Question 1:
+
+    Calling the BFS function with the spec-provided test cases yields the 
+    following results:
+
+        > (BFS '(ROOT))
+        Returns: (ROOT)
+
+        > (BFS '((((L E) F) T)))
+        Returns: (T F L E)
+
+        > (BFS '((R (I (G (H T))))))
+        Returns: (R I G H T)
+
+        > (BFS '(((A (B)) C (D))))
+        Returns: (C A D B)
+    
+        > (BFS '((T (H R E) E)))
+        Returns: (T E H R E)
+
+        > (BFS '((A ((C ((E) D)) B))))
+        Returns: (A B C D E)
+    
+    Note that each line beginning with the `>` character indicates user input.
+    Each of these test cases returns the correct result as delineated in the
+    homework spec.
+
+Question 2:
+
+    Calling the DFS function with my own test cases yields the following
+    results:
+
+        > (DFS '(T () T ()) ())
+        Returns: ((T NIL) (NIL NIL) (T T NIL NIL) (NIL T NIL NIL) (T T T NIL) 
+                 (NIL NIL T NIL) (T NIL T T) (NIL NIL T T) (T T T T)) 
+
+        > (DFS '(T T T T) ())
+        Returns: ((T T T T)) 
+
+        > (DFS '(() () () T) ())
+        Returns: ((NIL NIL NIL T) (T T NIL T) (NIL T NIL NIL) (T T T NIL) 
+                (NIL NIL T NIL) (T NIL T T) (NIL NIL T T) (T T T T)) 
+
+        > (DFS '(() () () ()) ())
+        Returns: ((NIL NIL NIL NIL) (T T NIL NIL) (NIL T NIL NIL) (T T T NIL) 
+                 (NIL NIL T NIL) (T NIL T T) (NIL NIL T T) (T T T T))  
+    
+    As above, each line beginning with the `>` character indicates user input.
+    Each of these test cases returns the correct result expected of a depth-
+    first search algorithm.

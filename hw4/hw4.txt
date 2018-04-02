@@ -1,0 +1,14 @@
+The graph pictured in the spec (graph1.txt) is not satisfiable using 3 colors.
+It is, however, satisfiable with 4 colors. This is because the highest degree
+node has a degree of 4. Using the colors red, green, blue, and yellow, a
+solution can be defined as follows:
+
+   Node 1: Red
+   Node 2: Green
+   Node 3: Red
+   Node 4: Blue
+   Node 5: Yellow
+   Node 6: Green
+   Node 7: Blue
+
+The second graph (graph2.txt) is only satisfiable using 8 or more colors.
